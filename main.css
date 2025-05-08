@@ -9,7 +9,7 @@
 .dark-mode {
   --color-bg: #333;
   --color-text: #ecf5ff;
-  --color-font-main: #56a5eb;
+  --color-font-main: #ecf5ff;
   --color-btn-bg: 333;
 }
 
@@ -61,6 +61,7 @@ h3 {
   width: 100vw;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   max-width: 80rem;
@@ -117,4 +118,35 @@ h3 {
   cursor: not-allowed;
   box-shadow: none;
   transform: none;
+}
+
+#theme-switch {
+  cursor: pointer;
+  border: none;
+  width: 5rem;
+  padding: 0;
+  border-radius: 50%;
+  background-color: var(--color-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+}
+
+#theme-switch svg {
+  fill: var(--color-font-main);
+  margin: 0;
+}
+
+#theme-switch svg:last-child {
+  display: none;
+}
+.dark-mode #theme-switch svg:first-child {
+  display: none;
+}
+
+.dark-mode #theme-switch svg:last-child {
+  display: block;
 }
