@@ -4,6 +4,7 @@
   --color-text: #333;
   --color-font-main: #56a5eb;
   --color-btn-bg: white;
+  --color-choice-txt: white;
 }
 
 .dark-mode {
@@ -11,6 +12,7 @@
   --color-text: #ecf5ff;
   --color-font-main: #ecf5ff;
   --color-btn-bg: #333;
+  --color-choice-txt: #333;
 }
 
 body {
@@ -175,5 +177,5 @@ h3 {
   padding: 1.5rem;
   color: var(--color-text);
   width: 100%;
-  background-color: var(--color-bg);
+  background-color: var(--color-choice-txt);
 }
