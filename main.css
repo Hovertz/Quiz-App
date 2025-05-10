@@ -1,3 +1,7 @@
+:root {
+  font-size: 62.5%;
+}
+
 /* VARIABLES */
 :root {
   --color-bg: #ecf5ff;
@@ -5,6 +9,8 @@
   --color-font-main: #56a5eb;
   --color-btn-bg: white;
   --color-choice-txt: white;
+  --color-success: #28a745;
+  --color-fail: #dc3545;
 }
 
 .dark-mode {
@@ -17,7 +23,6 @@
 
 body {
   background-color: var(--color-bg);
-  font-size: 62.5%;
 }
 
 * {
@@ -178,4 +183,26 @@ h3 {
   color: var(--color-text);
   width: 100%;
   background-color: var(--color-choice-txt);
+}
+
+.correct {
+  background-color: var(--color-success);
+}
+
+.incorrect {
+  background-color: var(--color-fail);
+}
+
+#hud {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hud-prefix {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.hud-main-text {
+  text-align: center;
 }
