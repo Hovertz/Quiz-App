@@ -108,6 +108,10 @@ const CORRECT_BONUS = 10;
 const MAX_QUESTIONS = 3;
 
 startGame = () => {
+  let bgMusic = document.getElementById("bg-music");
+  bgMusic.volume = 0.2;
+  bgMusic.play();
+
   questionCounter = 0;
   score = 0;
   availableQuestions = [...questions];
@@ -137,9 +141,13 @@ getNewQuestion = () => {
 
 choices.forEach((choice) => {
   choice.addEventListener("click", (e) => {
+    let audio = document.getElementById("select");
+    audio.play();
+
     if (!acceptingAnswers) return;
 
     acceptingAnswers = false;
+
     const selectedChoice = e.target;
     const selectedAnswer = selectedChoice.dataset["number"];
 
