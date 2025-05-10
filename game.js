@@ -106,7 +106,7 @@ let availableQuestions = [];
 
 // CONSTANTS
 const CORRECT_BONUS = 10;
-const MAX_QUESTIONS = 3;
+const MAX_QUESTIONS = 5;
 
 startGame = () => {
   let bgMusic = document.getElementById("bg-music");
