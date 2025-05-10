@@ -2,7 +2,7 @@
 //console.log(questions);
 let questions = [
   {
-    question: "Which team won the Champion's League in the season 2023/2024?",
+    question: "Which team won the Champions League in the season 2023/2024?",
     choice1: "Atalanta",
     choice2: "Bayer Leverkusen",
     choice3: "Borussia Dortmund",
@@ -26,7 +26,7 @@ let questions = [
     answer: 3,
   },
   {
-    question: "What is the only Swedish club that won the Champion's League?",
+    question: "What is the only Swedish club that won the Champions League?",
     choice1: "Goteborg",
     choice2: "Linkoping",
     choice3: "Malmo",
@@ -43,7 +43,7 @@ let questions = [
   },
   {
     question:
-      "Which player was a legend at Barcelona then moved to PSG, and lastly Inter Miami?",
+      "Which player was a legend at Barcelona, then moved to PSG and lastly to Inter Miami?",
     choice1: "Busquets",
     choice2: "Neymar",
     choice3: "Alba",
@@ -67,7 +67,7 @@ let questions = [
     answer: 3,
   },
   {
-    question: "Who is the only goalkeeper that has won the Ballon'Dor?",
+    question: "Who is the only goalkeeper that has won the Ballon D'Or?",
     choice1: "Donnarumma",
     choice2: "Yashin",
     choice3: "Cech",
@@ -75,7 +75,7 @@ let questions = [
     answer: 2,
   },
   {
-    question: "Which club went unbeaten in 2023/2024 from the Bundesliga?",
+    question: "Which club went unbeaten in 2023/2024 in the Bundesliga?",
     choice1: "Stuttgart",
     choice2: "Bayern Munchen",
     choice3: "Borussia Dortmund",
@@ -83,7 +83,8 @@ let questions = [
     answer: 4,
   },
   {
-    question: "Which 2 teams are in the Champions League final this season?",
+    question:
+      "Which 2 teams were in the Champions League final in the 2024/2025 season?",
     choice1: "PSG and Barcelona ",
     choice2: "Bayern Munchen and PSG",
     choice3: "Inter Milan and Barcelona",
@@ -109,7 +110,7 @@ const MAX_QUESTIONS = 3;
 
 startGame = () => {
   let bgMusic = document.getElementById("bg-music");
-  bgMusic.volume = 0.9;
+  bgMusic.volume = 0.2;
   bgMusic.play();
 
   questionCounter = 0;
