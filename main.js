@@ -1,4 +1,5 @@
-import { questions } from "/data.js";
+import { questions } from "./data.js";
+console.log(questions);
 
 const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("choice-text"));
