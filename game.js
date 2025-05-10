@@ -109,7 +109,7 @@ const MAX_QUESTIONS = 3;
 
 startGame = () => {
   let bgMusic = document.getElementById("bg-music");
-  bgMusic.volume = 0.2;
+  bgMusic.volume = 0.9;
   bgMusic.play();
 
   questionCounter = 0;
