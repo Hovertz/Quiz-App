@@ -37,6 +37,22 @@
 
       <div id="home" class="flex-center flex-column">
         <h1>Football Quiz</h1>
+
+        <script type="text/javascript">
+          function getRandomInt(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min)) + min; // The maximum is exclusive and the minimum is inclusive
+          }
+
+          document.write(
+            '<img id="football" src="assets/images/' +
+              getRandomInt(1, 2) +
+              '.png">'
+          );
+          //-->
+        </script>
+
         <a class="btn" href="game.html">Play</a>
         <a class="btn" href="highscores.html">High Scores</a>
       </div>
